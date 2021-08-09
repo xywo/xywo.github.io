@@ -180,7 +180,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-08-09 22:51:21 / Modified: 23:31:36" itemprop="dateCreated datePublished" datetime="2021-08-09T22:51:21+08:00">2021-08-09</time>
+              <time title="Created: 2021-08-09 22:51:21 / Modified: 23:33:12" itemprop="dateCreated datePublished" datetime="2021-08-09T22:51:21+08:00">2021-08-09</time>
             </span>
 
           
@@ -206,7 +206,7 @@
 </blockquote>
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>部署对我来说最大的问题就是如何使用两个git账号了，流程如下：</p>
 <p>首先创建密钥：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;name@mail.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的email&quot;</span><br></pre></td></tr></table></figure>
 <p>创建的时候第一个回车那里可以定义文件名，假设密码文件现在是<code>~/.ssh/id_rsa_a</code>，然后再敲两次回车</p>
 <p>然后执行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh-add id_rsa_a</span><br></pre></td></tr></table></figure>
@@ -232,7 +232,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">        name = 你的name</span><br><span class="line">        email = 你的email</span><br></pre></td></tr></table></figure>
 <p>这一步最关键，我自己弄的时候很多教程的设置可能最后没有改到这个文件，而是改成别的配置文件了</p>
 <p>接着就直接和官方文档一样直接部署即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
 
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>总的来说我还是弄了不少时间，但也还好。最后说一下在<code>source/_post/</code>的md文件可以是中文文件名的，实测，这样我管理起来也更方便一些了，不用再文件名英文里面标题又是中文了。</p>
 
