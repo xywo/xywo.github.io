@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xywo.github.io/schedule/index.html</loc>
+    <loc>https://xywo.github.io/2021/08/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2021-08-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xywo.github.io/2021/08/09/test/</loc>
     
     <lastmod>2021-08-09</lastmod>
     
@@ -10,6 +17,13 @@
   
   <url>
     <loc>https://xywo.github.io/about/index.html</loc>
+    
+    <lastmod>2021-08-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xywo.github.io/schedule/index.html</loc>
     
     <lastmod>2021-08-09</lastmod>
     
@@ -29,20 +43,6 @@
     
   </url>
   
-  <url>
-    <loc>https://xywo.github.io/2021/08/09/test/</loc>
-    
-    <lastmod>2021-08-09</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xywo.github.io/2021/08/09/hello-world/</loc>
-    
-    <lastmod>2021-08-09</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://xywo.github.io/</loc>
@@ -53,21 +53,28 @@
 
   
   <url>
-    <loc>https://xywo.github.io/tags/tags1/</loc>
+    <loc>https://xywo.github.io/tags/test-tags1/</loc>
     <lastmod>2021-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xywo.github.io/tags/tags2/</loc>
+    <loc>https://xywo.github.io/tags/test-tags2/</loc>
     <lastmod>2021-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xywo.github.io/tags/tags3/</loc>
+    <loc>https://xywo.github.io/tags/%E8%87%AA%E8%BF%B0/</loc>
+    <lastmod>2021-08-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xywo.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2021-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -76,21 +83,14 @@
 
   
   <url>
-    <loc>https://xywo.github.io/categories/cat1/</loc>
+    <loc>https://xywo.github.io/categories/test-cat1/</loc>
     <lastmod>2021-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xywo.github.io/categories/cat1/cat2/</loc>
-    <lastmod>2021-08-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xywo.github.io/categories/cat1/cat2/cat3/</loc>
+    <loc>https://xywo.github.io/categories/test-cat1/test-cat2/</loc>
     <lastmod>2021-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
