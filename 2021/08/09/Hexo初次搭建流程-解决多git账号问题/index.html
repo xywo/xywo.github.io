@@ -20,28 +20,35 @@
     var CONFIG = {"hostname":"xywo.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="My Blog">
-<meta property="og:url" content="https://xywo.github.io/index.html">
+  <meta name="description" content="第一次搭建Hexo，我的情况是：mac m1，本地需要用到两个git 流程如下： 安装按照官网流程安装：  https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;然后把官方教程都读了一遍试了试，感觉这个确实没什么好办法，只能慢慢读吧，这个时间是省不出来的  主题我选择了next主题，按照官方流程按照：  https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next然后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo初次搭建流程-解决多git账号问题">
+<meta property="og:url" content="https://xywo.github.io/2021/08/09/Hexo%E5%88%9D%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-%E8%A7%A3%E5%86%B3%E5%A4%9Agit%E8%B4%A6%E5%8F%B7%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="第一次搭建Hexo，我的情况是：mac m1，本地需要用到两个git 流程如下： 安装按照官网流程安装：  https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;然后把官方教程都读了一遍试了试，感觉这个确实没什么好办法，只能慢慢读吧，这个时间是省不出来的  主题我选择了next主题，按照官方流程按照：  https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next然后">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-09T14:51:21.710Z">
+<meta property="article:modified_time" content="2021-08-09T15:31:36.067Z">
 <meta property="article:author" content="Me">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="环境配置">
+<meta property="article:tag" content="踩坑">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xywo.github.io/">
+<link rel="canonical" href="https://xywo.github.io/2021/08/09/Hexo%E5%88%9D%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-%E8%A7%A3%E5%86%B3%E5%A4%9Agit%E8%B4%A6%E5%8F%B7%E9%97%AE%E9%A2%98/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'default'
   };
 </script>
 
-  <title>My Blog</title>
+  <title>Hexo初次搭建流程-解决多git账号问题 | My Blog</title>
   
 
 
@@ -149,12 +156,13 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
     <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2021/08/09/Hexo%E5%88%9D%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-%E8%A7%A3%E5%86%B3%E5%A4%9Agit%E8%B4%A6%E5%8F%B7%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -167,10 +175,9 @@
       <meta itemprop="name" content="My Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/09/Hexo%E5%88%9D%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-%E8%A7%A3%E5%86%B3%E5%A4%9Agit%E8%B4%A6%E5%8F%B7%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">Hexo初次搭建流程-解决多git账号问题</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Hexo初次搭建流程-解决多git账号问题
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -194,7 +201,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>第一次搭建Hexo，我的情况是：mac m1，本地需要用到两个git</p>
+        <p>第一次搭建Hexo，我的情况是：mac m1，本地需要用到两个git</p>
 <p>流程如下：</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>按照官网流程安装：</p>
 <blockquote>
@@ -236,224 +243,35 @@
 
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>总的来说我还是弄了不少时间，但也还好。最后说一下在<code>source/_post/</code>的md文件可以是中文文件名的，实测，这样我管理起来也更方便一些了，不用再文件名英文里面标题又是中文了。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag"># 环境配置</a>
+              <a href="/tags/%E8%B8%A9%E5%9D%91/" rel="tag"># 踩坑</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2021/08/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Me">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">我的第一篇博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-08-09 18:19:21 / Modified: 22:49:04" itemprop="dateCreated datePublished" datetime="2021-08-09T18:19:21+08:00">2021-08-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>弄了两天才把博客搭建完成，都还没开始写，该博客主要就是随便记录吧，也没打算出名什么的，后续先写起来吧。如果有需要邮箱联系即可。</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/08/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="我的第一篇博客">
+      <i class="fa fa-chevron-left"></i> 我的第一篇博客
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2021/08/09/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Me">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/09/test/" class="post-title-link" itemprop="url">test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-08-09 17:18:46 / Modified: 18:34:27" itemprop="dateCreated datePublished" datetime="2021-08-09T17:18:46+08:00">2021-08-09</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/test-cat1/" itemprop="url" rel="index"><span itemprop="name">test_cat1</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/test-cat1/test-cat2/" itemprop="url" rel="index"><span itemprop="name">test_cat2</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="h1-test"><a href="#h1-test" class="headerlink" title="h1 test"></a>h1 test</h1><p>test</p>
-<h2 id="h2-test"><a href="#h2-test" class="headerlink" title="h2 test"></a>h2 test</h2><p>test</p>
-<h3 id="h3-test"><a href="#h3-test" class="headerlink" title="h3 test"></a>h3 test</h3><p>test</p>
-<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><h2 id="test-1"><a href="#test-1" class="headerlink" title="test"></a>test</h2><p>test<br>test<br>test</p>
-<p>test</p>
-<p>test</p>
-<p>test</p>
-<blockquote>
-<p>test</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="http://www.baidu.com/">test</a></p>
-<p><img src="" alt="test"></p>
-<ul>
-<li>test</li>
-<li>test</li>
-</ul>
-<ul>
-<li>test</li>
-<li>test</li>
-</ul>
-<ul>
-<li>test</li>
-<li>test</li>
-</ul>
-<ol>
-<li>test</li>
-<li>test</li>
-<li>test</li>
-<li>test</li>
-</ol>
-<p>test</p>
-<ol>
-<li>test<br>test</li>
-<li>test</li>
-<li>test</li>
-<li>test</li>
-</ol>
-<ul>
-<li><p>test<br>  test<br>  test</p>
-</li>
-<li><p>test</p>
-<ul>
-<li>test</li>
-</ul>
-</li>
-<li><p>test</p>
-<ul>
-<li>test</li>
-</ul>
-</li>
-</ul>
-<p>test</p>
-<hr>
-<h2 id="test-2"><a href="#test-2" class="headerlink" title="test"></a>test</h2><p>test</p>
-<p><em>test</em><br><em>test</em></p>
-<p><strong>test</strong><br><strong>test</strong></p>
-<p><code>for</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &gt; 0; i++)&#123;</span><br><span class="line">    print(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="center">test</th>
-<th align="center">test</th>
-<th align="center">test</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">test</td>
-<td align="center">test</td>
-<td align="center">test</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -506,6 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2"><span class="nav-number">3.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%85%B3%E9%94%AE%EF%BC%81"><span class="nav-number">3.1.</span> <span class="nav-text">最关键！</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E5%B0%BE"><span class="nav-number">4.</span> <span class="nav-text">结尾</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
