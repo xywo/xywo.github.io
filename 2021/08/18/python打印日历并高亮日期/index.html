@@ -20,23 +20,22 @@
     var CONFIG = {"hostname":"xywo.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="背景游戏中经常出现的后世界指的是： 过去人类文明已经高度发达，科技非常先进。但是因为一些原因或灾难，这些灾难多半是人造成的，导致之前非常发达文明被夷为平地。只有一些幸存者以及之前高科技产物被遗留了下来。 接着，少数幸存者便又在这片大陆生活，这些幸存者也在继续繁衍后代。就这样过了很久之后，之前的文明大部分都被淹没在水下&#x2F;埋在土里&#x2F;被树木占领&#x2F;早已经被核弹夷为平地。而现存的人类则是从头搭建起人类文明，">
+  <meta name="description" content="python自带calendar库可以打印日历，但是不能高亮其中的日期，可以这样：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="游戏中的后世界题材的介绍和感想">
-<meta property="og:url" content="https://xywo.github.io/2021/08/10/%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E5%90%8E%E4%B8%96%E7%95%8C%E9%A2%98%E6%9D%90%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%92%8C%E6%84%9F%E6%83%B3/index.html">
+<meta property="og:title" content="python打印日历并高亮日期">
+<meta property="og:url" content="https://xywo.github.io/2021/08/18/python%E6%89%93%E5%8D%B0%E6%97%A5%E5%8E%86%E5%B9%B6%E9%AB%98%E4%BA%AE%E6%97%A5%E6%9C%9F/index.html">
 <meta property="og:site_name" content="inuang&#39;s blog">
-<meta property="og:description" content="背景游戏中经常出现的后世界指的是： 过去人类文明已经高度发达，科技非常先进。但是因为一些原因或灾难，这些灾难多半是人造成的，导致之前非常发达文明被夷为平地。只有一些幸存者以及之前高科技产物被遗留了下来。 接着，少数幸存者便又在这片大陆生活，这些幸存者也在继续繁衍后代。就这样过了很久之后，之前的文明大部分都被淹没在水下&#x2F;埋在土里&#x2F;被树木占领&#x2F;早已经被核弹夷为平地。而现存的人类则是从头搭建起人类文明，">
+<meta property="og:description" content="python自带calendar库可以打印日历，但是不能高亮其中的日期，可以这样：">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-15T04:52:06.636Z">
+<meta property="article:published_time" content="2021-08-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-18T16:12:39.024Z">
 <meta property="article:author" content="inuange">
-<meta property="article:tag" content="游戏">
-<meta property="article:tag" content="后世界">
-<meta property="article:tag" content="感想">
-<meta property="article:tag" content="美术风格">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="代码">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xywo.github.io/2021/08/10/%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E5%90%8E%E4%B8%96%E7%95%8C%E9%A2%98%E6%9D%90%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%92%8C%E6%84%9F%E6%83%B3/">
+<link rel="canonical" href="https://xywo.github.io/2021/08/18/python%E6%89%93%E5%8D%B0%E6%97%A5%E5%8E%86%E5%B9%B6%E9%AB%98%E4%BA%AE%E6%97%A5%E6%9C%9F/">
 
 
 <script id="page-configurations">
@@ -49,7 +48,7 @@
   };
 </script>
 
-  <title>游戏中的后世界题材的介绍和感想 | inuang's blog</title>
+  <title>python打印日历并高亮日期 | inuang's blog</title>
   
 
 
@@ -178,7 +177,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
-    <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2021/08/10/%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E5%90%8E%E4%B8%96%E7%95%8C%E9%A2%98%E6%9D%90%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%92%8C%E6%84%9F%E6%83%B3/">
+    <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2021/08/18/python%E6%89%93%E5%8D%B0%E6%97%A5%E5%8E%86%E5%B9%B6%E9%AB%98%E4%BA%AE%E6%97%A5%E6%9C%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -191,7 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          游戏中的后世界题材的介绍和感想
+          python打印日历并高亮日期
         </h1>
 
         <div class="post-meta">
@@ -201,14 +200,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-08-10 00:00:00" itemprop="dateCreated datePublished" datetime="2021-08-10T00:00:00+08:00">2021-08-10</time>
+              <time title="Created: 2021-08-18 00:00:00" itemprop="dateCreated datePublished" datetime="2021-08-18T00:00:00+08:00">2021-08-18</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-15 12:52:06" itemprop="dateModified" datetime="2021-08-15T12:52:06+08:00">2021-08-15</time>
+                <time title="Modified: 2021-08-19 00:12:39" itemprop="dateModified" datetime="2021-08-19T00:12:39+08:00">2021-08-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -216,11 +215,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B8%B8%E6%88%8F/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/" itemprop="url" rel="index"><span itemprop="name">美术风格</span></a>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -235,23 +234,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>游戏中经常出现的后世界指的是：</p>
-<p>过去人类文明已经高度发达，科技非常先进。但是因为一些原因或灾难，这些灾难多半是人造成的，导致之前非常发达文明被夷为平地。只有一些幸存者以及之前高科技产物被遗留了下来。</p>
-<p>接着，少数幸存者便又在这片大陆生活，这些幸存者也在继续繁衍后代。就这样过了很久之后，之前的文明大部分都被淹没在水下/埋在土里/被树木占领/早已经被核弹夷为平地。而现存的人类则是从头搭建起人类文明，但还远没有达到古代人类的发达程度。</p>
-<p>背景就到这里，而游戏里的主人公基本就是现存人类中的一员。因此游戏里会出现一种很有趣的风格，就是古代和高科技产物会出现在一起。游戏里的“古物”一词不再是我们理解的古物，而是古人类的高科技产物，“古物”反而象征着高级，但是因为“古物”有限因此只有少数人有。</p>
-<p>想象一下，一个部落里或者一个中世纪宫殿里，里面的人穿着古装，却带着ar眼睛，用着全息投影。非常有趣的风格。</p>
+        <p>python自带calendar库可以打印日历，但是不能高亮其中的日期，可以这样：</p>
 <span id="more"></span>
 
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>在此基础上也有很多分类：</p>
-<ul>
-<li>首先是古人类灭绝的原因，有天灾有人祸，这个一般影响游戏想传达的哲学思想。</li>
-<li>现存人类是否继承了古人类的知识，这是一个关键的分类。如果现存人类继承了知识，那么游戏世界会是现存人类空有知识但是物质非常缺乏。如果现存人类未能继承知识，那么游戏世界里现场人类会自己给古人类留下的科技产物起名字，多半用一些迷信思想解读，并把古人类遗留的机器信奉为神等。</li>
-<li>现存人类是否知道古代人类存在并且高度先进，这个一般影响游戏剧情。如果现存人类知道古代人类，那么这可能就是游戏为了解决游戏在剧情上的bug故意这么设置的。反之，现存人类不知道古代人类，那么这将在游戏剧情起到核心要素，主人公会去一步步揭开这个秘密。</li>
-<li>现在世界的样子可以说是各种各样了，有普通的草地树木原始部落的，有各种废弃建筑上长满树的，有全是沙漠的，有全是海的，等等，存在的生物也可能不一样，甚至可能还有古人类的先进机器存在。</li>
-</ul>
-<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>后世界的设定在游戏用的很多，我认为最主要还是提供了一种游戏的世界观和美术风格，这种高科技与落后的科技共存的场景，确实非常吸引人，很容易造就出独特的美术风格。</p>
-<p>并且后世界的设定可以弥补游戏在剧情设定的bug，有时游戏为了游戏机制有一些设定很难用剧情圆回来，那么后世界就是一个很好的办法。比如在一个中世纪的游戏中，为了让主角拥有超强的力量，要么可以加入神话传说，要么就是后世界，主角则是极少数了解了古人类科技并会运用的人。</p>
-<p>令我印象深刻的还是后世界游戏里的美术风格，也推荐读者也可以尝试尝试相关的高质量游戏，确实是难得的体验。</p>
+<p>代码主要来源于：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/66021616/highlighting-todays-date-in-python-using-calendar-py-in-command-prompt-windows">https://stackoverflow.com/questions/66021616/highlighting-todays-date-in-python-using-calendar-py-in-command-prompt-windows</a></p>
+<p>我修改后代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 高亮日期，输入calendar打印的字符串，和要高亮的日期，注意date日期要和打印的年份月份统一</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">highlight_date</span>(<span class="params">this_month, date</span>):</span></span><br><span class="line">    date = date.day.__str__().rjust(<span class="number">2</span>)</span><br><span class="line">    rday = (<span class="string">&#x27;\\b&#x27;</span> + date + <span class="string">&#x27;\\b&#x27;</span>).replace(<span class="string">&#x27;\\b &#x27;</span>, <span class="string">&#x27;\\s&#x27;</span>)</span><br><span class="line">    rdayc = <span class="string">&quot;\033[7m&quot;</span> + date + <span class="string">&quot;\033[0m&quot;</span></span><br><span class="line">    <span class="keyword">return</span> re.sub(rday,rdayc,this_month)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成要打印的月份的字符串，year是要打印的年份，month是要打印的月份，date是要高亮的日期</span></span><br><span class="line">to_print = calendar.month(year, month)</span><br><span class="line">to_print = highlight_date(to_print, date1)</span><br><span class="line">to_print = highlight_date(to_print, date2)</span><br><span class="line">to_print = highlight_date(to_print, date3)</span><br><span class="line"><span class="built_in">print</span>(to_print)</span><br></pre></td></tr></table></figure>
+
+<p>这个代码还不够完善，如果<code>date</code>的日期不在<code>month</code>月份里，会导致结果不对。不过我用的话够了。</p>
 
     </div>
 
@@ -261,10 +251,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag"># 游戏</a>
-              <a href="/tags/%E5%90%8E%E4%B8%96%E7%95%8C/" rel="tag"># 后世界</a>
-              <a href="/tags/%E6%84%9F%E6%83%B3/" rel="tag"># 感想</a>
-              <a href="/tags/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/" rel="tag"># 美术风格</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag"># 计算机</a>
+              <a href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag"># 代码</a>
+              <a href="/tags/python/" rel="tag"># python</a>
           </div>
 
         
@@ -273,13 +262,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/08/09/Hexo%E5%88%9D%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B-%E8%A7%A3%E5%86%B3%E5%A4%9Agit%E8%B4%A6%E5%8F%B7%E9%97%AE%E9%A2%98/" rel="prev" title="Hexo初次搭建流程-解决多git账号问题">
-      <i class="fa fa-chevron-left"></i> Hexo初次搭建流程-解决多git账号问题
+    <a href="/2021/08/16/Hexo%20Next%20%E4%B8%BB%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97/" rel="prev" title="Hexo Next 主页只显示部分文字">
+      <i class="fa fa-chevron-left"></i> Hexo Next 主页只显示部分文字
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/08/11/Mac%E6%89%93%E5%BC%80CSC%E5%85%AC%E6%B4%BE%E7%95%99%E5%AD%A6%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/" rel="next" title="Mac打开CSC公派留学信息管理平台">
-      Mac打开CSC公派留学信息管理平台 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -338,7 +324,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">2.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%84%9F%E6%83%B3"><span class="nav-number">3.</span> <span class="nav-text">感想</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
