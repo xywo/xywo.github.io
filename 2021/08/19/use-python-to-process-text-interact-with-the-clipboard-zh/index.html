@@ -22,17 +22,22 @@
     var CONFIG = {"hostname":"inuang.ink","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="欢迎，点击Tags和Archives来查看博客，转载请标出处。 Welcome! Click Tags and Archives to view blogs. Please include attribution to copy this site&#39;s content.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="inuang&#39;s blog">
-<meta property="og:url" content="https://inuang.ink/categories/%E7%89%A9%E7%90%86/%E5%85%89%E5%AD%A6/%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84/index.html">
+  <meta name="description" content="在某些情况下，你要处理一些文字，但是因为某些原因不方便全程用python自动化处理，但你可以把可以用python处理的地方单独处理。本文尝试使用了剪贴板的办法，你只需要复制你所要处理的文字，然后在python程序这按回车，处理好的文字自动放在剪贴板里，你在粘贴回去即可。个人觉得比较方便。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用python快速处理文本：与剪贴板交互">
+<meta property="og:url" content="https://inuang.ink/2021/08/19/use-python-to-process-text-interact-with-the-clipboard-zh/index.html">
 <meta property="og:site_name" content="inuang&#39;s blog">
-<meta property="og:description" content="欢迎，点击Tags和Archives来查看博客，转载请标出处。 Welcome! Click Tags and Archives to view blogs. Please include attribution to copy this site&#39;s content.">
+<meta property="og:description" content="在某些情况下，你要处理一些文字，但是因为某些原因不方便全程用python自动化处理，但你可以把可以用python处理的地方单独处理。本文尝试使用了剪贴板的办法，你只需要复制你所要处理的文字，然后在python程序这按回车，处理好的文字自动放在剪贴板里，你在粘贴回去即可。个人觉得比较方便。">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-19T12:41:33.604Z">
 <meta property="article:author" content="inuange">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="代码">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://inuang.ink/categories/%E7%89%A9%E7%90%86/%E5%85%89%E5%AD%A6/%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84/">
+<link rel="canonical" href="https://inuang.ink/2021/08/19/use-python-to-process-text-interact-with-the-clipboard-zh/">
 
 
 <script id="page-configurations">
@@ -40,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'default'
   };
 </script>
 
-  <title>Category: 光的衍射 | inuang's blog</title>
+  <title>使用python快速处理文本：与剪贴板交互 | inuang's blog</title>
   
 
 
@@ -168,51 +173,101 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">光的衍射
-          <small>Category</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="https://inuang.ink/2021/08/19/use-python-to-process-text-interact-with-the-clipboard-zh/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="inuange">
+      <meta itemprop="description" content="欢迎，点击Tags和Archives来查看博客，转载请标出处。 Welcome! Click Tags and Archives to view blogs. Please include attribution to copy this site's content.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="inuang's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用python快速处理文本：与剪贴板交互
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-08-19 00:00:00 / Modified: 20:41:33" itemprop="dateCreated datePublished" datetime="2021-08-19T00:00:00+08:00">2021-08-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2019</span>
+        <p>在某些情况下，你要处理一些文字，但是因为某些原因不方便全程用python自动化处理，但你可以把可以用python处理的地方单独处理。本文尝试使用了剪贴板的办法，你只需要复制你所要处理的文字，然后在python程序这按回车，处理好的文字自动放在剪贴板里，你在粘贴回去即可。个人觉得比较方便。</p>
+<span id="more"></span>
+
+<p>首先，安装<code>pyperclip</code>python包，用pip和conda都行：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pyperclip</span><br><span class="line">conda install pyperclip</span><br></pre></td></tr></table></figure>
+
+<p>使用下面代码即可，使用时将<code>some_text_process</code>函数里的内容改写为你需要的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyperclip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">some_text_process</span>(<span class="params">s</span>):</span></span><br><span class="line">    <span class="comment"># 你的文字处理代码</span></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="comment"># 输入exit退出</span></span><br><span class="line">    <span class="keyword">while</span> s != <span class="string">&#x27;exit&#x27;</span>:</span><br><span class="line">        s = <span class="built_in">input</span>(<span class="string">&quot;:&quot;</span>) <span class="comment"># 这里&quot;:&quot;是提示文字，可以任意设置</span></span><br><span class="line">        <span class="keyword">if</span> s == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">            <span class="comment"># 如果直接按回车默认使用剪贴板</span></span><br><span class="line">            s = pyperclip.paste()</span><br><span class="line">        o = some_text_process(s)</span><br><span class="line">        <span class="comment"># 打印一下进行校对</span></span><br><span class="line">        <span class="built_in">print</span>(o)</span><br><span class="line">        <span class="comment"># 最后把处理好的文字再放回键贴版，可以在其他地方粘贴使用</span></span><br><span class="line">        pyperclip.copy(o)</span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-06-30T00:00:00+08:00"
-              content="2019-06-30">
-          06-30
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag"># 计算机</a>
+              <a href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag"># 代码</a>
+              <a href="/tags/python/" rel="tag"># python</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2019/06/30/why-can't-the-microscope-see-atoms-diffraction-of-light-zh/" itemprop="url">
-            <span itemprop="name">为什么显微镜看不到原子：光的衍射</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/08/18/python-print-calendar-and-highlight-dates-zh/" rel="prev" title="python打印日历并高亮日期">
+      <i class="fa fa-chevron-left"></i> python打印日历并高亮日期
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
