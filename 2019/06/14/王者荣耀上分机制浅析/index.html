@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="google-site-verification" content="njLcEMY41fKOpdYazGzKWvXyQ0HjYHoQ4l3CU72J_Ow">
+  <meta name="msvalidate.01" content="946d832c6301b1e00259fb7bfdb8064a">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -18,13 +19,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xywo.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"inuang.ink","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="星星的产生王者荣耀的段位是由星数决定的，因此在后续的分析中星数也就代表了段位，例如10颗星就等于白银三段位1颗星。 每局游戏都有5名玩家失去1颗星，5名玩家获得1颗星，但是，这不是一个零和博弈。王者荣耀有三种产出星星的方式：  在青铜局，和白银的人机局，每局会凭空多出5颗星 最低段位的玩家每参与一局游戏并输掉就会多处1颗星 勇者积分每抵一次会多出1颗星 开黑卡，每使用一张就会多出1颗星  所以第一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王者荣耀上分机制浅析">
-<meta property="og:url" content="https://xywo.github.io/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/index.html">
+<meta property="og:url" content="https://inuang.ink/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/index.html">
 <meta property="og:site_name" content="inuang&#39;s blog">
 <meta property="og:description" content="星星的产生王者荣耀的段位是由星数决定的，因此在后续的分析中星数也就代表了段位，例如10颗星就等于白银三段位1颗星。 每局游戏都有5名玩家失去1颗星，5名玩家获得1颗星，但是，这不是一个零和博弈。王者荣耀有三种产出星星的方式：  在青铜局，和白银的人机局，每局会凭空多出5颗星 最低段位的玩家每参与一局游戏并输掉就会多处1颗星 勇者积分每抵一次会多出1颗星 开黑卡，每使用一张就会多出1颗星  所以第一">
 <meta property="og:locale">
@@ -37,7 +38,7 @@
 <meta property="article:tag" content="统计学">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xywo.github.io/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/">
+<link rel="canonical" href="https://inuang.ink/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/">
 
 
 <script id="page-configurations">
@@ -180,7 +181,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
-    <link itemprop="mainEntityOfPage" href="https://xywo.github.io/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/">
+    <link itemprop="mainEntityOfPage" href="https://inuang.ink/2019/06/14/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%8A%E5%88%86%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
