@@ -22,22 +22,21 @@
     var CONFIG = {"hostname":"inuang.ink","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="大家都知道波粒二象性，量子力学里最出名的是双缝干涉实验，刷新了人们对世界的认识。 第一个实验叫Double-Slit ‘Which-Way’，双缝干涉实验，人类的观测本身能影响被观测者的状态。 第二个实验叫Delayed Choice Quantum Eraser，也被叫做量子延迟选择&#x2F;延迟选择&#x2F;量子擦除，人类在未来的观测依然能影响过去的被观测者。">
+  <meta name="description" content="开门见山，直接举两个例子： 假设有三位同学共同商量今晚吃啥，假如我们只讨论火锅，烧烤，泡面三个候选项：  同学#1的顺序：火锅&gt;烧烤&gt;泡面 同学#2的顺序：烧烤&gt;泡面&gt;火锅 同学#3的顺序：泡面&gt;火锅&gt;烧烤  因为三选一投票无法选出结果，同学们决定用淘汰制投票：  情形1：先火锅VS烧烤，得票2:1，淘汰烧烤，接着火锅VS泡面，得票1:2，最后吃泡面 情形2：先">
 <meta property="og:type" content="article">
-<meta property="og:title" content="量子力学中刷新对世界的认识">
-<meta property="og:url" content="https://inuang.ink/2020/03/07/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E5%88%B7%E6%96%B0%E5%AF%B9%E4%B8%96%E7%95%8C%E7%9A%84%E8%AE%A4%E8%AF%86/index.html">
+<meta property="og:title" content="投票真的公平吗：投票机制解析">
+<meta property="og:url" content="https://inuang.ink/2020/02/28/is-voting-really-fair-analysis-of-voting-mechanism-zh/index.html">
 <meta property="og:site_name" content="inuang&#39;s blog">
-<meta property="og:description" content="大家都知道波粒二象性，量子力学里最出名的是双缝干涉实验，刷新了人们对世界的认识。 第一个实验叫Double-Slit ‘Which-Way’，双缝干涉实验，人类的观测本身能影响被观测者的状态。 第二个实验叫Delayed Choice Quantum Eraser，也被叫做量子延迟选择&#x2F;延迟选择&#x2F;量子擦除，人类在未来的观测依然能影响过去的被观测者。">
+<meta property="og:description" content="开门见山，直接举两个例子： 假设有三位同学共同商量今晚吃啥，假如我们只讨论火锅，烧烤，泡面三个候选项：  同学#1的顺序：火锅&gt;烧烤&gt;泡面 同学#2的顺序：烧烤&gt;泡面&gt;火锅 同学#3的顺序：泡面&gt;火锅&gt;烧烤  因为三选一投票无法选出结果，同学们决定用淘汰制投票：  情形1：先火锅VS烧烤，得票2:1，淘汰烧烤，接着火锅VS泡面，得票1:2，最后吃泡面 情形2：先">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-03-06T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-15T04:47:16.479Z">
+<meta property="article:published_time" content="2020-02-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-08-19T12:22:19.844Z">
 <meta property="article:author" content="inuange">
-<meta property="article:tag" content="物理">
-<meta property="article:tag" content="量子力学">
-<meta property="article:tag" content="实验">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="投票">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://inuang.ink/2020/03/07/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E5%88%B7%E6%96%B0%E5%AF%B9%E4%B8%96%E7%95%8C%E7%9A%84%E8%AE%A4%E8%AF%86/">
+<link rel="canonical" href="https://inuang.ink/2020/02/28/is-voting-really-fair-analysis-of-voting-mechanism-zh/">
 
 
 <script id="page-configurations">
@@ -50,7 +49,7 @@
   };
 </script>
 
-  <title>量子力学中刷新对世界的认识 | inuang's blog</title>
+  <title>投票真的公平吗：投票机制解析 | inuang's blog</title>
   
 
 
@@ -180,7 +179,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
-    <link itemprop="mainEntityOfPage" href="https://inuang.ink/2020/03/07/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E4%B8%AD%E5%88%B7%E6%96%B0%E5%AF%B9%E4%B8%96%E7%95%8C%E7%9A%84%E8%AE%A4%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="https://inuang.ink/2020/02/28/is-voting-really-fair-analysis-of-voting-mechanism-zh/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -193,7 +192,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          量子力学中刷新对世界的认识
+          投票真的公平吗：投票机制解析
         </h1>
 
         <div class="post-meta">
@@ -203,14 +202,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-03-07 00:00:00" itemprop="dateCreated datePublished" datetime="2020-03-07T00:00:00+08:00">2020-03-07</time>
+              <time title="Created: 2020-02-28 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-28T00:00:00+08:00">2020-02-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-15 12:47:16" itemprop="dateModified" datetime="2021-08-15T12:47:16+08:00">2021-08-15</time>
+                <time title="Modified: 2021-08-19 20:22:19" itemprop="dateModified" datetime="2021-08-19T20:22:19+08:00">2021-08-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -218,11 +217,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%89%A9%E7%90%86/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">量子力学</span></a>
+                  <a href="/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数学</span></a>
                 </span>
             </span>
 
@@ -237,25 +232,69 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>大家都知道波粒二象性，量子力学里最出名的是双缝干涉实验，刷新了人们对世界的认识。</p>
-<p>第一个实验叫Double-Slit ‘Which-Way’，双缝干涉实验，人类的观测本身能影响被观测者的状态。</p>
-<p>第二个实验叫Delayed Choice Quantum Eraser，也被叫做量子延迟选择/延迟选择/量子擦除，人类在未来的观测依然能影响过去的被观测者。</p>
+        <p>开门见山，直接举两个例子：</p>
+<p>假设有三位同学共同商量今晚吃啥，假如我们只讨论火锅，烧烤，泡面三个候选项：</p>
+<ul>
+<li>同学#1的顺序：火锅&gt;烧烤&gt;泡面</li>
+<li>同学#2的顺序：烧烤&gt;泡面&gt;火锅</li>
+<li>同学#3的顺序：泡面&gt;火锅&gt;烧烤</li>
+</ul>
+<p>因为三选一投票无法选出结果，同学们决定用淘汰制投票：</p>
+<ul>
+<li>情形1：先火锅VS烧烤，得票2:1，淘汰烧烤，接着火锅VS泡面，得票1:2，最后吃泡面</li>
+<li>情形2：先火锅VS泡面，得票1:2，淘汰火锅，接着泡面VS烧烤，得票1:2，最后吃烧烤</li>
+<li>情形3：先烧烤VS泡面，得票2:1，淘汰泡面，接着烧烤VS火锅，得票1:2，最后吃火锅</li>
+</ul>
+<p>即使三位同学都公正投票，但投票结果竟然取决于投票规则。</p>
 <span id="more"></span>
 
-<h2 id="Double-Slit-‘Which-Way’"><a href="#Double-Slit-‘Which-Way’" class="headerlink" title="Double-Slit ‘Which-Way’"></a>Double-Slit ‘Which-Way’</h2><p>第一个实验大体是这样：</p>
-<p>经典的双缝干涉实验，一个粒子过去，在后面形成波纹状的干涉图案，展现了粒子的波动性。于是科学家想知道粒子到底是怎么通过双缝的，因此对双缝进行了观测，观察粒子怎么走的，结果发现一旦进行了观测，粒子就只会通过其中一个缝，波纹状的干涉图案消失，展现出了粒子性。</p>
-<p>最神奇的地方就在于，观测本身会影响粒子展现波动性还是粒子性。粒子好像能知道自己是否被观测了，如果自己不被观测，就展现波动性，形成干涉图案，如果发现自己被观测了，就展现粒子性，干涉图案消失。</p>
-<p>波动性也可以理解为一个粒子同时通过了两个缝。如果不观测，那么粒子就会同时通过两个缝，即在一个缝，又在另一个缝。如果观测了，粒子就只会真的只通过一个缝。</p>
-<p>不止这个实验，任何能够区分粒子通过哪一条缝的实验都会使得干涉图案消失。</p>
-<p>以前的逻辑是，因为粒子有波动性/粒子性，因此观测到/没观测到干涉图案，而现在的逻辑变成了因为我们观测/没观测，所以才出现/没出现干涉图案。</p>
-<p>对此薛定谔就提出过反对意见，薛定谔的猫就是说就算是在未被观测时，猫怎么可能即是活的又是死的，以此反驳上面实验的观点。</p>
-<p>爱因斯坦也秉持反对意见，一件事是否发生不可能和是否被观测有关，不管你观测了还是没观测，客观发生了的就是客观发生了的。</p>
-<p>但是实验结果就是这样，观测本身就会影响粒子的状态，具体原因依然算是个迷。</p>
-<h2 id="Delayed-Choice-Quantum-Eraser"><a href="#Delayed-Choice-Quantum-Eraser" class="headerlink" title="Delayed Choice Quantum Eraser"></a>Delayed Choice Quantum Eraser</h2><p>上面的实验就已经比较玄幻了，下面的实验就更玄幻了。</p>
-<p>简单的说，科学家利用一种方法将一个粒子变成了两个粒子，这两个粒子是纠缠对，也就是两个粒子完全一样，以某种方式有着联系，会表现出一样的特性。第一个粒子先通过双缝然后形成图案，接着科学家观测第二个粒子。首先第一个粒子形成图案，然后再进行观测。形成图案在先，观测在后。</p>
-<p>实验发现，即使观测在后，只要进行了观测，干涉图案就会消失。粒子好像甚至能知道未来自己会不会被观测，如果未来的自己会被观测，就没有干涉图案，如果未来的自己没有被观测，就有干涉图案。也许用这个方法能将未来的信息传到过去？</p>
-<p>这个实验还有一个小插曲，科学家对第二个粒子观测时，对第二个粒子做特殊处理，使得第二个粒子现在被观测了，只是我们不知道观测结果，最后依然出现了干涉图案。</p>
-<p>总的来说，观测本身能够影响粒子的状态，而且未来的观测能够影响过去的粒子状态。甚至能逆转未来？对此的解释到现在也总说纷云。</p>
+<hr>
+<p>另一个例子，现在假设四位同学讨论晚饭吃啥，我们依然只讨论火锅，烧烤，泡面三个候选项，这次我们不用顺序，而是用分数来衡量每个同学想吃什么，分数满分10分，分数越高意味着某个同学越想吃对应的食物</p>
+<ul>
+<li>同学#1：火锅8分，泡面7分，烧烤3分</li>
+<li>同学#2：火锅8分，泡面7分，烧烤4分</li>
+<li>同学#3：火锅1分，泡面9分，烧烤5分</li>
+<li>同学#4：火锅2分，泡面7分，烧烤9分</li>
+</ul>
+<p>如果进行三选一投票那么火锅:泡面:烧烤是2:1:1，结果是火锅胜出，但是我们可以明显看出泡面才是最佳选项因为总分数火锅:泡面:烧烤是19:30:21。三选一的投票法竟然选出了三位同学总体相对来说最不想吃的食物。</p>
+<hr>
+<p>两个例子结束了，如果说第一个例子确实没法说出一个最优解，那么第二例子里三选一的投票方式反而选出了总分数最低的火锅。</p>
+<p>其中一种改进便是百分比投票，或者说多票数投票。每位同学现在都可以有100票而不是1票可以投给火锅烧烤泡面，比如同学#1的投票就会变成火锅44票，泡面39票，烧烤17票。最后统计每一种食物的得票总数。这样最终的结果就是泡面当选。</p>
+<p>之所以出现这样的情况是因为有同学在某两个选项之间无所谓，比如例子二同学#1和同学#2其实是火锅泡面无所谓都行的，但如果强行三选一，那么本来无所谓的同学就会投出有所谓的一票。</p>
+<hr>
+<p>但是仅仅这样就够吗？还可以举一个例子，假设有三个同学，他们对火锅烧烤泡面的打分是：</p>
+<ul>
+<li>同学#1：火锅4，泡面3，烧烤3</li>
+<li>同学#2：火锅10，泡面0，烧烤0</li>
+<li>同学#3：火锅0，泡面10，烧烤0</li>
+</ul>
+<p>那么按照之前的投票法，每人100票，火锅当选，但是如果三位同学是这么想的呢：</p>
+<ul>
+<li>同学#1：其实我选什么都一样啦，只是偏向火锅多一点</li>
+<li>同学#2：我最爱吃火锅！其他食物对我来说只是补充养分的道具。</li>
+<li>同学#3：我对火锅和烧烤严重过敏，随便沾一点就有生命危险会被直接送去ICU，所以只能吃泡面。</li>
+</ul>
+<p>那么这个时候最佳方案是什么呢？(当然是大家分开吃了……但这里咱们先假设必须一起吃) 不管如何投票，结果都是火锅，但最佳方案应该是泡面。同学#2吃泡面的损失和同学#3吃火锅的损失是完全不一样的。</p>
+<p>这是因为每个打分的标准都只参考了自己。同学#2给火锅打10分是参照了自己对泡面和烧烤的分数。同学#3给泡面打10分是参照了自己对火锅和烧烤的分数。他们无法互相参考(至少有时候，比如有1万个人在投票)。假设现在有个会读心术的超能力者，知道所有人的想法，给出了一个“绝对”分值：</p>
+<ul>
+<li>同学#1：火锅3.5，泡面3，烧烤3</li>
+<li>同学#2：火锅6，泡面2，烧烤2</li>
+<li>同学#3：火锅0，泡面10，烧烤0</li>
+</ul>
+<p>在“绝对”分值里，同学#3的泡面是10分，而同学#2的火锅可能实际只有6分，而泡面也有了2分。因为同学#2吃完泡面至少能充饥也不会有身体问题。</p>
+<p>同学#2想吃火锅，同学#3想吃泡面，但同学#2的想的程度和同学#3的想的程度是很难比较的。</p>
+<hr>
+<p>一种解决方法便是有一个管理者，就像会读心术的超能力者一样，考虑到同学#3的情况，直接强行增加泡面的得票数。</p>
+<p>另一种方法则是投票交易。即每人依然拥有100票，但现在可以与其他投票者进行交易，转让自己的投票。这里再假设大家经济实力一样。每个同学可以用钱向其他同学购买投票。在这个小市场机制下：</p>
+<ul>
+<li>同学#1因为无所谓，愿意出1块钱购买1票投给火锅</li>
+<li>同学#2因为超热爱火锅，愿意出10块钱购买1票投给火锅</li>
+<li>同学#3因为生死攸关，愿意出100块购买1票投给泡面</li>
+</ul>
+<p>那么最后的结果会是什么？可能同学#3用20块钱的价格从同学#1和同学#2买到了51票，最后泡面151票当选。这里的1块，5块，100块的价格就充当了前面会读心术的超能力者的角色。</p>
+<p>但是这样公平吗？这个问题我也无法解答。</p>
+<hr>
+<p>说了这么多为什么每人一票制依然流行呢？因为它简单。</p>
 
     </div>
 
@@ -265,9 +304,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%89%A9%E7%90%86/" rel="tag"># 物理</a>
-              <a href="/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" rel="tag"># 量子力学</a>
-              <a href="/tags/%E5%AE%9E%E9%AA%8C/" rel="tag"># 实验</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+              <a href="/tags/%E6%8A%95%E7%A5%A8/" rel="tag"># 投票</a>
           </div>
 
         
@@ -276,12 +314,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/28/%E6%8A%95%E7%A5%A8%E7%9C%9F%E7%9A%84%E5%85%AC%E5%B9%B3%E5%90%97-%E6%8A%95%E7%A5%A8%E6%9C%BA%E5%88%B6%E8%A7%A3%E6%9E%90/" rel="prev" title="投票真的公平吗-投票机制解析">
-      <i class="fa fa-chevron-left"></i> 投票真的公平吗-投票机制解析
+    <a href="/2019/06/30/why-can't-the-microscope-see-atoms-diffraction-of-light-zh/" rel="prev" title="为什么显微镜看不到原子：光的衍射">
+      <i class="fa fa-chevron-left"></i> 为什么显微镜看不到原子：光的衍射
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/03/09/%E6%98%9F%E5%BA%A7%E5%AD%A6%E8%AF%B4%E7%9A%84%E4%B8%80%E4%BA%9B%E7%A7%91%E6%99%AE/" rel="next" title="星座学说的一些科普">
-      星座学说的一些科普 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/07/refresh-the-understanding-of-the-world-with-quantum-mechanics-zh/" rel="next" title="量子力学中刷新对世界的认识">
+      量子力学中刷新对世界的认识 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -341,7 +379,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Double-Slit-%E2%80%98Which-Way%E2%80%99"><span class="nav-number">1.</span> <span class="nav-text">Double-Slit ‘Which-Way’</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Delayed-Choice-Quantum-Eraser"><span class="nav-number">2.</span> <span class="nav-text">Delayed Choice Quantum Eraser</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
