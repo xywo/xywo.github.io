@@ -340,13 +340,6 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/tags/%E6%8A%95%E7%A5%A8/</loc>
-    <lastmod>2021-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://inuang.ink/tags/%E5%90%8E%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
@@ -362,6 +355,13 @@
   
   <url>
     <loc>https://inuang.ink/tags/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E6%8A%95%E7%A5%A8/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -396,27 +396,6 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/tags/%E6%98%9F%E5%BA%A7/</loc>
-    <lastmod>2021-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
-    <lastmod>2021-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E7%8E%84%E5%AD%A6/</loc>
-    <lastmod>2021-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://inuang.ink/tags/%E7%89%A9%E7%90%86/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
@@ -432,6 +411,27 @@
   
   <url>
     <loc>https://inuang.ink/tags/%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E6%98%9F%E5%BA%A7/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E7%8E%84%E5%AD%A6/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -531,14 +531,14 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
+    <loc>https://inuang.ink/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
