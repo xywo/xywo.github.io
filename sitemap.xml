@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://inuang.ink/2021/09/19/monster-hunter-stories--wings-of-ruin-review-zh/</loc>
+    <loc>https://inuang.ink/2017/01/01/nier-automata-review-zh/</loc>
+    
+    <lastmod>2021-09-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/2021/09/19/monster-hunter-stories-2-wings-of-ruin-review-zh/</loc>
+    
+    <lastmod>2021-09-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/2021/09/16/call-of-duty-review-zh/</loc>
     
     <lastmod>2021-09-20</lastmod>
     
@@ -12,13 +26,6 @@
     <loc>https://inuang.ink/2020/01/01/monster-hunter-review-zh/</loc>
     
     <lastmod>2021-09-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/2021/09/18/call-of-duty-review-zh/</loc>
-    
-    <lastmod>2021-09-19</lastmod>
     
   </url>
   
@@ -256,6 +263,27 @@
 
   
   <url>
+    <loc>https://inuang.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E6%80%A7%E6%A0%BC/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://inuang.ink/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
@@ -354,7 +382,21 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <loc>https://inuang.ink/tags/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/Call-of-Duty/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E7%8E%A9%E5%90%8E%E6%84%9F/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,6 +424,41 @@
   </url>
   
   <url>
+    <loc>https://inuang.ink/tags/%E5%BC%B9%E4%B8%B8%E8%AE%BA%E7%A0%B4/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/Danganronpa/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E6%9C%80%E7%BB%88%E5%B9%BB%E6%83%B3/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/Final-Fantasy/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/Mac/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://inuang.ink/tags/Hexo/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
@@ -403,35 +480,7 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://inuang.ink/tags/%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E6%9C%80%E7%BB%88%E5%B9%BB%E6%83%B3/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/Final-Fantasy/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E7%8E%A9%E5%90%8E%E6%84%9F/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -453,41 +502,6 @@
   
   <url>
     <loc>https://inuang.ink/tags/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/Call-of-Duty/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E5%BC%B9%E4%B8%B8%E8%AE%BA%E7%A0%B4/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/Danganronpa/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/Mac/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -536,7 +550,14 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/tags/python/</loc>
+    <loc>https://inuang.ink/tags/%E5%B0%BC%E5%B0%94%E6%9C%BA%E6%A2%B0%E7%BA%AA%E5%85%83/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/NieR-Automata/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -551,6 +572,13 @@
   
   <url>
     <loc>https://inuang.ink/tags/Ace-Attorney/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/python/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -572,20 +600,6 @@
   
   <url>
     <loc>https://inuang.ink/tags/%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E8%8D%92%E9%87%8E%E5%A4%A7%E9%95%96%E5%AE%A2/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/Red-Dead-Redemption/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -620,6 +634,34 @@
   </url>
   
   <url>
+    <loc>https://inuang.ink/tags/%E8%8D%92%E9%87%8E%E5%A4%A7%E9%95%96%E5%AE%A2/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/Red-Dead-Redemption/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/tags/git/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://inuang.ink/tags/%E9%87%91%E8%9E%8D/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
@@ -628,13 +670,6 @@
   
   <url>
     <loc>https://inuang.ink/tags/%E5%AE%BF%E8%88%8D/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/%E6%80%A7%E6%A0%BC/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -675,21 +710,21 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://inuang.ink/tags/%E8%B8%A9%E5%9D%91/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/tags/git/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://inuang.ink/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://inuang.ink/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2021-09-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/</loc>
@@ -713,7 +748,7 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E5%8D%95%E4%BA%BA%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -727,14 +762,7 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E5%8D%95%E4%BA%BA%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
+    <loc>https://inuang.ink/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -748,14 +776,14 @@
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://inuang.ink/categories/%E6%B8%B8%E6%88%8F/%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://inuang.ink/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://inuang.ink/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -777,13 +805,6 @@
   
   <url>
     <loc>https://inuang.ink/categories/%E7%89%A9%E7%90%86/</loc>
-    <lastmod>2021-09-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://inuang.ink/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
     <lastmod>2021-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
