@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://inuang.ink/my-first-blog-zh/</loc>
+    <lastmod>2021-10-06</lastmod>
+  </url>
+  <url>
     <loc>https://inuang.ink/the-real-interest-rate-of-the-installment-payment-is-higher-than-it-seems-zh/</loc>
     <lastmod>2021-10-06</lastmod>
   </url>
@@ -111,10 +115,6 @@
   <url>
     <loc>https://inuang.ink/break-the-barriers-of-exploring-different-entertainment-fields-and-experience-more-excellent-works-zh/</loc>
     <lastmod>2021-08-21</lastmod>
-  </url>
-  <url>
-    <loc>https://inuang.ink/my-first-blog-zh/</loc>
-    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://inuang.ink/use-python-to-process-text-interact-with-the-clipboard-zh/</loc>
