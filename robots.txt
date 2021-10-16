@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inuang.ink/sitemap.xml
+Sitemap: https://inuang.ink/baidusitemap.xml
