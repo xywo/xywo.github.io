@@ -233,12 +233,9 @@
       
         <p>在某些情况下，你要处理一些文字，但是因为某些原因不方便全程用python自动化处理，但你可以把可以用python处理的地方单独处理。本文尝试使用了剪贴板的办法，你只需要复制你所要处理的文字，然后在python程序这按回车，处理好的文字自动放在剪贴板里，你在粘贴回去即可。个人觉得比较方便。</p>
 <span id="more"></span>
+<p>首先，安装<code>pyperclip</code>python包，这个包是和剪贴板有关的包，用pip和conda都行： <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pyperclip</span><br><span class="line">conda install pyperclip</span><br></pre></td></tr></table></figure></p>
+<p>使用下面代码即可，使用时将<code>some_text_process</code>函数里的内容改写为你需要的： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyperclip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">some_text_process</span>(<span class="params">s</span>):</span></span><br><span class="line">    <span class="comment"># 你的文字处理代码</span></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="comment"># 输入exit退出</span></span><br><span class="line">    <span class="keyword">while</span> s != <span class="string">&#x27;exit&#x27;</span>:</span><br><span class="line">        s = <span class="built_in">input</span>(<span class="string">&quot;:&quot;</span>) <span class="comment"># 这里&quot;:&quot;是提示文字，可以任意设置</span></span><br><span class="line">        <span class="keyword">if</span> s == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">            <span class="comment"># 如果直接按回车默认使用剪贴板</span></span><br><span class="line">            s = pyperclip.paste()</span><br><span class="line">        o = some_text_process(s)</span><br><span class="line">        <span class="comment"># 打印一下进行校对</span></span><br><span class="line">        <span class="built_in">print</span>(o)</span><br><span class="line">        <span class="comment"># 最后把处理好的文字再放回键贴版，可以在其他地方粘贴使用</span></span><br><span class="line">        pyperclip.copy(o)</span><br></pre></td></tr></table></figure></p>
 
-<p>首先，安装<code>pyperclip</code>python包，这个包是和剪贴板有关的包，用pip和conda都行：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pyperclip</span><br><span class="line">conda install pyperclip</span><br></pre></td></tr></table></figure>
-
-<p>使用下面代码即可，使用时将<code>some_text_process</code>函数里的内容改写为你需要的：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyperclip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">some_text_process</span>(<span class="params">s</span>):</span></span><br><span class="line">    <span class="comment"># 你的文字处理代码</span></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="comment"># 输入exit退出</span></span><br><span class="line">    <span class="keyword">while</span> s != <span class="string">&#x27;exit&#x27;</span>:</span><br><span class="line">        s = <span class="built_in">input</span>(<span class="string">&quot;:&quot;</span>) <span class="comment"># 这里&quot;:&quot;是提示文字，可以任意设置</span></span><br><span class="line">        <span class="keyword">if</span> s == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">            <span class="comment"># 如果直接按回车默认使用剪贴板</span></span><br><span class="line">            s = pyperclip.paste()</span><br><span class="line">        o = some_text_process(s)</span><br><span class="line">        <span class="comment"># 打印一下进行校对</span></span><br><span class="line">        <span class="built_in">print</span>(o)</span><br><span class="line">        <span class="comment"># 最后把处理好的文字再放回键贴版，可以在其他地方粘贴使用</span></span><br><span class="line">        pyperclip.copy(o)</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -336,20 +333,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">56</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">26</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">120</span>
+        <span class="site-state-item-count">128</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -445,6 +442,8 @@
 
 
 
+
+  
 
   
 
